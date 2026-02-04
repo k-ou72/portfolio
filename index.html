@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Portfolio Header Example</title>
+  <link rel="stylesheet" href="3.style.css?v=1.2">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <!-- 左: 名前/ロゴ（自分の名前に変えてね） -->
+      <a href="#" class="logo">Kon<span>U</span></a>
+
+      <!-- ハンバーガーメニュー（スマホ用） -->
+      <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" />
+      <label for="hamburger-checkbox" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
+      <!-- 右: ナビゲーションメニュー -->
+      <ul class="nav-menu">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Aboutセクション -->
+  <section id="top"></section>
+  <section id="about">
+    <div class="container">
+      <h2>自己紹介</h2>
+      <p>初めまして、上野公平です。HTML/CSSを中心に、レスポンシブ対応のWebサイト制作を行っています。
+        シンプルで見やすく、目的が伝わるデザインを大切にしています。
+      </p>
+      <ul>
+        <li>スキル: HTML/CSS(レスポンシブ対応)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!--Worksセクション -->
+  <section id="works" >
+    <div class="container">
+      <h2>制作サンプル</h2>
+      <div class="works-grid">
+        <div class="work-card">
+          <h3>LP（サービス紹介ページ）</h3>
+          <p>架空サービスを想定した、1ページ構成のサービス紹介サイト。</p>
+          <a href="2.placeholder.html" class="work-link">詳細を見る</a>
+        </div>
+        <div class="work-card">
+          <h3>ブログ／企業サイト風ページ</h3>
+          <p>情報発信や企業サイトを想定した、シンプルで読みやすい構成。</p>
+          <a href="2.placeholder.html" class="work-link">詳細を見る</a>
+        </div>
+        <div class="work-card">
+          <h3>個人・フリーランス向けサイト</h3>
+          <p>プロフィールや実績をまとめた、個人向けのWebサイト。</p>
+          <a href="2.placeholder.html" class="work-link">詳細を見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <h3>ポートフォリオをご覧いただきありがとうございます。</h3>
+    <p>現在はクラウドワークスを中心にお仕事をお受けしています。</p>
+    <p>案件のご相談は、クラウドワークスよりご連絡ください。</p>
+    
+    <a href="https://github.com/k-ou72/scraping-demo"
+       target="_blank"
+       rel="noopener noreferrer" 
+       class="contact-button">
+      お問い合わせはこちら
+    </a>
+  </section>
+</body>
+</html>
