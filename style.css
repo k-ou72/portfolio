@@ -318,7 +318,11 @@ header {
     margin-bottom: 20px;
   }
 
-  #about ul li {
+  #about h3 {
+    font-size: 1.4rem;
+  }
+
+  #about ul {
     font-size: 1rem;
   }
 
