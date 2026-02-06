@@ -96,5 +96,18 @@
       クラウドワークス 公開プロフィール
     </a>
   </section>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.getElementById('hamburger-checkbox');
+    const links = document.querySelectorAll('.nav-menu a');
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        checkbox.checked = false; // メニューを閉じる
+      });
+    });
+  });
+</script>
 </body>
 </html>
