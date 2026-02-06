@@ -324,6 +324,7 @@ header {
 
   #about ul {
     font-size: 1rem;
+    padding-left: 3rem;
   }
 
   #works .container {
