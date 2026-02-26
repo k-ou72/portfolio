@@ -42,19 +42,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
   }
 
   section {
-    text-align: center;
-    margin-bottom: var(--header-height);
+    padding-bottom: 80px;
     scroll-margin-top: var(--header-height);
   }
 
   .container{
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .site-header .container {
+    max-width: none;
+    padding: 0 40px;
   }
   
   .logo {
@@ -116,8 +119,7 @@
   }
 
   .hero {
-    padding: 40px 0 20px;
-    margin-bottom: 60px;
+    padding: 40px 0 80px;
   }
   
   .hero-lead{
@@ -127,12 +129,16 @@
     text-align: center;
   }
 
+  #about {
+    text-align: center;
+  }
+
   #about .container {
     max-width: 800px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   
   #about h2 {
@@ -156,10 +162,10 @@
   #about ul {
     list-style: disc;
     display: inline-block;
-    margin: 0 auto;
     padding-left: 3.8rem;
     text-align: left;
     font-size: 1.2rem;
+    margin: 0 auto;
   }
   
   #about ul li {
@@ -172,6 +178,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
+  #works {
+    text-align: center;
+  }
+
   #works h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
@@ -182,13 +192,14 @@
     display: flex;
     gap: 40px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
-  
+
   .work-card {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    flex: 1;
+    min-width: 300px;
     padding: 20px;
     background: #f8f9fa;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -202,7 +213,7 @@
   }
   
   .work-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-bottom: 10px;
   }
   
@@ -210,30 +221,9 @@
     font-size: 1rem;
   }
   
-  .work-card__btn {
-    margin-top: auto;
-    align-self: flex-start;
-  }
-  
-  .btn--disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-  
-  .btn--disabled:hover {
-    text-decoration: none;
-    transform: none;
-  }
-  
-  .works-note {
-    margin-top: 8px;
-    font-size: 0.875rem;
-    opacity: 0.8;
-    text-align: center;
-  }
-  
   #contact {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    text-align: center;
   }
   
   #contact h2 {
@@ -280,9 +270,8 @@
   ===================== */
   @media (max-width: 768px) {
     
-    section{
-      margin-bottom: 40px;
-      padding: 0 20px;
+    section {
+      padding-bottom: 40px;
     }
   
     #about h2,
@@ -299,7 +288,7 @@
     }
 
     .header-inner {
-      margin: 0 auto;
+      padding: 0 30px;
     }
   
     .logo {
@@ -347,8 +336,7 @@
     }
 
     .hero {
-      padding: 30px 0 15px;
-      margin-bottom: 25px;
+      padding: 30px 0 40px;
     }
 
     .hero-lead{
@@ -380,7 +368,6 @@
       flex-direction: column;
       align-items: center;
       gap: 16px;
-      margin: 0;
     }
   
     #works h2 {
