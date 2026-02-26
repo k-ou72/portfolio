@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- ヘッダー　-->
+  <header class="site-header">
     <div class="container header-inner">
+      <!-- 左: ロゴ -->
       <span class="logo">ポートフォリオ(HTML/CSS)</span>
 
-      <!--Hamburgerクラス-->
+      <!-- ハンバーガーメニュー -->
       <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" />
       <label for="hamburger-checkbox" class="hamburger">
         <span></span>
@@ -19,9 +21,9 @@
         <span></span>
       </label>
       
-      <!--Nav-menuクラス-->
+      <!-- 右: ナビゲーションメニュー -->
       <ul class="nav-menu">
-        <li><a href="#top">ホーム</a></li>
+        <li><a href="#home">ホーム</a></li>
         <li><a href="#about">自己紹介</a></li>
         <li><a href="#works">制作サンプル</a></li>
         <li><a href="#contact">お問い合わせ</a></li>
@@ -29,23 +31,29 @@
     </div>
   </header>
 
+  
+  <section class="hero" id="home">
+    <div class="container">
+      <p class="hero-lead">HTML/CSSを中心としたWebサイト制作</p>
+    </div>
+  </section>
   <!-- Aboutセクション -->
-  <section id="top"></section>
   <section id="about">
     <div class="container">
       <h2>自己紹介</h2>
       <p>はじめまして、上野公平です。
-        HTML/CSSを中心に、レスポンシブ対応のWebサイト制作を行っています。
-        シンプルで見やすく、目的が伝わる構成を意識して制作しています。
-        既存デザインをもとにしたコーディングや、軽微な修正にも対応可能です。
+          HTML/CSSを中心にWebサイト制作を行っています。
+          必要に応じてWordPressを使用したサイト構築にも対応可能です。
+          見やすさを大切にし、伝わりやすい構成を意識して制作しています。
       </p>
       <h3>対応可能な内容</h3>
       <ul>
         <li>HTML/CSS（レスポンシブ対応）</li>
-        <li>既存デザインをもとにしたコーディング</li>
-        <li>LP（1ページ構成）サイトの制作</li>
+        <li>WordPressサイト制作</li>
+        <li>既存デザインのコーディング</li>
+        <li>LP（1ページ構成）の制作</li>
         <li>スマートフォン表示の最適化</li>
-        <li>既存サイトの軽微な修正・調整</li>
+        <li>既存サイトの修正・調整</li>
       </ul>
     </div>
   </section>
@@ -56,58 +64,68 @@
       <h2>制作サンプル</h2>
       <div class="works-grid">
         <div class="work-card">
-          <h3>LP（サービス紹介ページ）</h3>
-          <p>架空サービスを想定した<br>1ページ構成のサービス紹介サイト。</p>
-          <button class="btn btn--disabled" type="button" disabled aria-disabled="true">
-            詳細を見る（準備中）
-          </button>
-          <p class="works-note">制作サンプル（詳細ページ準備中）</p> 
+          <h2>カフェ公式サイト</h2>
+          <h3>カフェ公式サイトを<br>想定して制作</h3>
+          <p>店舗の雰囲気やメニュー情報が整理された構成にしています。写真と余白を活かし、
+              落ち着いた印象になるよう設計しました。HTML/CSSで実装し、レスポンシブ対応を行っています。
+          </p>
         </div>
         <div class="work-card">
-          <h3>ブログ／企業サイト風ページ</h3>
-          <p>情報発信や企業サイトを想定した<br>シンプルで読みやすい構成。</p>
-          <button class="btn btn--disabled" type="button" disabled aria-disabled="true">
-            詳細を見る（準備中）
-          </button>
-          <p class="works-note">制作サンプル（詳細ページ準備中）</p>
+          <h2>美容室LP</h2>
+          <h3>美容室の集客を想定した<br>ランディングページ</h3>
+          <p>施術内容・料金・予約までの流れを整理した構成にしています。
+              視線の流れを意識し、安心感が伝わるレイアウト設計を行いました。
+              HTML/CSSで実装し、スマートフォン表示に対応しています。
+          </p>
         </div>
         <div class="work-card">
-          <h3>個人・フリーランス向けサイト</h3>
-          <p>プロフィールや実績をまとめた<br>個人向けのWebサイト。</p>
-          <button class="btn btn--disabled" type="button" disabled aria-disabled="true">
-            詳細を見る（準備中）
-          </button>
-          <p class="works-note">制作サンプル（詳細ページ準備中）</p>
+            <h2>パーソナルジムサイト</h2>
+          <h3>パーソナルジムの紹介サイトを<br>想定して制作</h3>
+          <p>サービス内容と料金プランがわかりやすく伝わる構成にしています。
+              清潔感と適切なサポート体制が感じられるよう、シンプルで信頼感のある
+              デザイン設計を行いました。HTML/CSSで実装し、各デバイスに対応した表示調整を行っています。
+          </p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!--Contactセクション-->
-  <section id="contact">
-    <h2>ご相談について</h2>
-    <h3>ポートフォリオをご覧いただきありがとうございます。</h3>
-    <p>お仕事のご相談は、クラウドワークス経由でお願いいたします。<br>
-      以下は、私のクラウドワークス公開プロフィールです。
-    </p>
-    
-    <a href="https://crowdworks.jp/public/employees/6728283"
-      class="contact-button">
-      クラウドワークス 公開プロフィール
-    </a>
-  </section>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const checkbox = document.getElementById('hamburger-checkbox');
-    const links = document.querySelectorAll('.nav-menu a');
 
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        checkbox.checked = false; // メニューを閉じる
+  <!-- Contactセクション -->
+  <section id="contact">
+    <div class="container">
+      <h2>ご相談について</h2>
+      <h3>ポートフォリオをご覧いただきありがとうございます。</h3>
+      <p>お仕事のご相談は、クラウドワークス経由でお願いいたします。<br>
+      以下は、私のクラウドワークス公開プロフィールです。
+      </p>
+      <a href="https://crowdworks.jp/public/employees/6728283"
+        class="contact-button">
+        クラウドワークス 公開プロフィール
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター　-->
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="js-year"></span> 上野公平</small>
+    </div>
+  </footer>
+
+  <!-- JS　-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkbox = document.getElementById('hamburger-checkbox');
+      const links = document.querySelectorAll('.nav-menu a');
+
+      if (!checkbox || !links.length) return;
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          checkbox.checked = false;
+        });
       });
     });
-  });
   </script>
 </body>
 </html>
