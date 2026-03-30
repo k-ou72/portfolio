@@ -1,0 +1,396 @@
+/* =========================
+   Base
+========================= */
+:root {
+    --color-base: #f8f5f0;
+    --color-white: #ffffff;
+    --color-text: #4a4038;
+    --color-subtext: #7a6f66;
+    --color-accent: #b79b84;
+    --color-border: #e7dfd7;
+
+    --font-size-base: 16px;
+    --fong-size-subtitle: 0.875rem;
+    --font-size-text: 1rem;
+    --font-size-title: clamp(2rem, 4vw, 3.5rem);
+    --font-size-section-title: clamp(1.75rem, 3vw, 2.5rem);
+
+    --section-padding: 80px;
+    --container-width: 1100px;
+    --transition: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-base);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =========================
+   Common
+========================= */
+.section {
+    padding: var(--section-padding) 20px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    margin: 0 0 12px;
+    font-size: var(--fong-size-subtitle);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.section-title {
+    margin: 0 0 24px;
+    font-size: var(--font-size-title);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.section-title--center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 1px solid var(--color-accent);
+    transition: var(--transition);
+}
+
+.btn--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.btn--primary:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   Header
+========================= */
+.salon-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 245, 240, 0.95);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 1000;
+}
+
+.salon-header__inner {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.salon-header__logo {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.salon-header__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.salon-header__nav a {
+    font-size: 0.95rem;
+    color: var(--color-subtext);
+    transition: var(--transition);
+}
+
+.salon-header__nav a:hover {
+    color: var(--color-text);
+}
+
+.salon-main {
+    padding-top: 72px;
+}
+
+/* =========================
+   Hero
+========================= */
+.salon-hero {
+    min-height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient( rgba(255, 255, 255, 0.25),
+                    rgba(255, 255, 255, 0.25)),
+        url("../images/hero.jpg") center / cover no-repeat;
+}
+
+.salon-hero__inner {
+    max-width: 760px;
+    padding: 40px 20px;
+}
+
+.salon-hero__sub {
+    margin: 0 0 16px;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.salon-hero__title {
+    margin: 0 0 20px;
+    font-size: var(--font-size-title);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.salon-hero__text {
+    margin: 0 0 32px;
+    font-size: 1.05rem;
+    color: var(--color-subtext);
+}
+
+/* =========================
+   Concept/About
+========================= */
+.salon-concept__inner,
+.salon-about__inner,
+.salon-access__inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.salon-concept__image,
+.salon-concept__content,
+.salon-about__image,
+.salon-about__content,
+.salon-access__map,
+.salon-access__info {
+    width: 50%;
+}
+
+.salon-concept__image img,
+.salon-about__image img,
+.salon-access__map img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.salon-concept__text,
+.salon-about__text,
+.salon-contact__text,
+.salon-access__text {
+    margin: 0;
+    color: var(--color-subtext);
+}
+
+.salon-access__name {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.salon-access__text + .salon-access__text {
+    margin-top: 10px;
+}
+
+/* =========================
+   Menu
+========================= */
+.salon-meun {
+    background-color: var(--color-white);
+}
+
+.salon-menu .section-subtitle {
+    text-align: center;
+}
+
+.salon-menu__list {
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid var(--color-border);
+}
+
+.salon-menu__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.salon-menu__name,
+.salon-menu__price {
+    font-size: 1rem;
+}
+
+/* =========================
+   Style
+========================= */
+.salon-style__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.salon-style__item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* =========================
+   Contact
+========================= */
+.salon-contact {
+    background-color: var(--color-white);
+}
+
+.salon-contact__inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.salon-contact__text {
+    margin-bottom: 32px;
+}
+
+/* =========================
+   Footer
+========================= */
+.salon-footer {
+    padding: 32px 20px;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-border);
+}
+
+.salon-footer__inner {
+    text-align: center;
+}
+
+.salon-footer__logo {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.salon-footer__copy {
+    margin: 0;
+    font-size:0.875rem;
+    color: var(--color-subtext);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media(max-width: 768px) {
+    :root {
+        --section-padding: 64px;
+    }
+
+    .salon-header__inner {
+        min-height: 64px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .salon-header__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 16px;
+    }
+
+    .salon-main {
+        padding-top: 110px;
+    }
+
+    .salon-hero {
+        min-height: 80vh;
+    }
+
+    .salon-concept__inner,
+    .salon-about__inner,
+    .salon-access__inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .salon-concept__image,
+    .salon-concept__content,
+    .salon-about__image,
+    .salon-about__content,
+    .salon-access__map,
+    .salon-access__info {
+        width: 100%;
+    }
+
+    .salon-style__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
+}
+
+@media(max-width: 480px) {
+    .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .salon-style__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .salon-hero__title {
+        line-height: 1.4;
+    }
+
+    .salon-hero__text {
+        font-size: 1rem;
+    }
+}
