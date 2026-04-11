@@ -237,22 +237,22 @@
     color: #fff;
   }
   
-  #contact {
+  #outro {
     padding-bottom: 40px;
     text-align: center;
   }
   
-  #contact h2 {
+  #outro h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
   }
   
-  #contact h3 {
+  #outro h3 {
     margin-bottom: 40px;
     font-size: 1.5rem;
   }
   
-  .contact-button {
+  .outro-button {
     display: inline-block;
     padding: 12px 24px;
     background: #2c3e50;
@@ -264,7 +264,7 @@
     font-size: 1.5rem;
   }
   
-  .contact-button:hover {
+  .outro-button:hover {
     background: #3498db;
   }
 
@@ -287,14 +287,14 @@
   
     #about h2,
     #works h2,
-    #contact h2 {
+    #outro h2 {
       font-size: 1.5rem;
       margin-bottom: 15px;
     }
   
     #about p,
     #works p,
-    #contact p {
+    #outro p {
       font-size: 0.8rem;
     }
 
@@ -409,15 +409,15 @@
       padding-bottom: 5px;
     }
 
-    #contact h3 {
+    #outro h3 {
       margin-bottom: 10px;
     }
 
-    #contact p {
+    #outro p {
       margin-bottom: 25px;
     }
   
-    .contact-button {
+    .outro-button {
       padding: 6px 12px;
       font-size: 0.8rem;
     }
