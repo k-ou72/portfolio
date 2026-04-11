@@ -293,8 +293,7 @@
     }
   
     #about p,
-    #works p,
-    #outro p {
+    #works p {
       font-size: 0.8rem;
     }
 
@@ -411,6 +410,7 @@
 
     #outro h3 {
       margin-bottom: 10px;
+      font-size: 1rem;
     }
   
     .outro-button {
