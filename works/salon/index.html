@@ -7,6 +7,7 @@
     <title>Hair Salon Lumiere | 自然体の美しさを引き出すサロン</title>
     <meta name="description" content="自然体の美しさを引き出す美容室。落ち着いた空間で丁寧な施術をご提供します。">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,10 +17,17 @@
                 <h1 class="salon-header__logo">
                 <a href="#top">Lumiere</a>
                 </h1>
-        
+                
+                <button class="hamburger" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <nav class="salon-header__nav">
                 <ul class="salon-header__list">
                     <li><a href="#concept">Concept</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#style">Style</a></li>
                     <li><a href="#access">Access</a></li>
@@ -32,15 +40,57 @@
 
     <main class="salon-main">
         <section class="salon-hero" id="top">
-            <div class="salon-hero__inner">
-                <p class="salon-hero__sub">Hair Salon</p>
-                <h1 class="salon-hero__title">自然体の美しさを引き出すサロン</h1>
-                <p class="salon-hero__text">落ち着いた空間で、あなたらしいスタイルを</p>
-                <a href="#contact" class="btn btn--primary">ご予約はこちら</a>
+            <div class="swiper hero-swiper">
+              <div class="swiper-wrapper">
+          
+                <!-- スライド1：草原 -->
+                <div class="swiper-slide">
+                  <div class="hero-slide" style="background-image: url('assets/images/hero-1.jpg');">
+                    <div class="salon-hero__inner">
+                      <p class="salon-hero__sub">Hair Salon</p>
+                      <h2 class="salon-hero__title">自然体の美しさを引き出すサロン</h2>
+                      <p class="salon-hero__text">落ち着いた空間で、あなたらしいスタイルを</p>
+                      <a href="#contact" class="btn btn--primary">ご予約はこちら</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- スライド2：森 -->
+                <div class="swiper-slide">
+                  <div class="hero-slide" style="background-image: url('assets/images/hero-2.jpg');">
+                    <div class="salon-hero__inner">
+                      <p class="salon-hero__sub">Hair Salon</p>
+                      <h2 class="salon-hero__title">自然に包まれた、癒しの時間</h2>
+                      <p class="salon-hero__text">木漏れ日の中で、心からくつろぐひとときを</p>
+                      <a href="#contact" class="btn btn--primary">ご予約はこちら</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- スライド3：海辺 -->
+                <div class="swiper-slide">
+                  <div class="hero-slide" style="background-image: url('assets/images/hero-3.jpg');">
+                    <div class="salon-hero__inner">
+                      <p class="salon-hero__sub">Hair Salon</p>
+                      <h2 class="salon-hero__title">凛とした美しさを、あなたに</h2>
+                      <p class="salon-hero__text">丁寧な施術で、内側から輝くスタイルへ</p>
+                      <a href="#contact" class="btn btn--primary">ご予約はこちら</a>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+          
+              <!-- 矢印ボタン -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          
+              <!-- ドットナビゲーション -->
+              <div class="swiper-pagination"></div>
             </div>
-        </section>
+          </section>
 
-        <section class="salon-concept section" id="concept">
+        <section class="salon-concept section fade-in" id="concept">
             <div class="container">
                 <div class="salon-concept__inner">
                     <div class="salon-concept__image">
@@ -58,7 +108,7 @@
             </div>    
         </section>
 
-        <section class="salon-about section" id="about">
+        <section class="salon-about section fade-in" id="about">
             <div class="container">
                 <div class="salon-about__inner">
                     <div class="salon-about__content">
@@ -70,7 +120,7 @@
                         </p>
                     </div>
                     <div class="salon-about__image">
-                        <img src="assets/images/aboutjpg" alt="落ち着いた雰囲気の美容室内観">
+                        <img src="assets/images/about.jpg" alt="落ち着いた雰囲気の美容室内観">
                     </div>
                 </div>
             </div>
@@ -105,34 +155,40 @@
             </div>
         </section>
 
-        <section class="salon-style section" id="style">
+        <section class="salon-style section fade-in" id="style">
             <div class="container">
                 <p class="section-subtitle">Style</p>
-                <h2 class="section-title section-title__center">Hair Style</h2>
+                <h2 class="section-title section-title--center">Hair Style</h2>
                 
                 <div class="salon-style__grid">
                     <div class="salon-style__item">
                         <img src="assets/images/style-1.jpg" alt="ヘアスタイル１">
+                        <p class="salon-style__name">ミディアム</p>
                     </div>
-
+                    
                     <div class="salon-style__item">
                         <img src="assets/images/style-2.jpg" alt="ヘアスタイル２">
+                        <p class="salon-style__name">ショートレイヤー</p>
                     </div>
-
+                    
                     <div class="salon-style__item">
                         <img src="assets/images/style-3.jpg" alt="ヘアスタイル３">
+                        <p class="salon-style__name">ショートボブ</p>
                     </div>
-
+                    
                     <div class="salon-style__item">
                         <img src="assets/images/style-4.jpg" alt="ヘアスタイル４">
+                        <p class="salon-style__name">ロングウェーブ</p>
                     </div>
-
+                    
                     <div class="salon-style__item">
                         <img src="assets/images/style-5.jpg" alt="ヘアスタイル５">
+                        <p class="salon-style__name">ロング</p>
                     </div>
-
+                    
                     <div class="salon-style__item">
                         <img src="assets/images/style-6.jpg" alt="ヘアスタイル６">
+                        <p class="salon-style__name">ミディアムウェーブ</p>
                     </div>
                 </div>
             </div>
@@ -145,15 +201,37 @@
 
                 <div class="salon-access__inner">
                     <div class="salon-access__map">
-                        <img src="assets/images/access-map.jpg" alt="店舗周辺マップ">
+                            <iframe
+                                title="店舗周辺マップ"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8113.742472464692!2d131.48641619196246!3d33.305112284984794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1778235353806!5m2!1sja!2sjp"
+                                style="border:0;" 
+                                width="100%" 
+                                height="400" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                     </div>
 
                     <div class="salon-access__info">
-                        <p class="salon-access__name">Hair Salon Lumiere</p>
-                        <p class="salon-access__text">大分県〇〇市〇〇１２３</p>
-                        <p class="salon-access__text">営業時間 : 10:00〜19:00</p>
-                        <p class="salon-access__text">定休日 : 火曜日</p>
-                        <p class="salon-access__text">TEL : 00-1234-5678</p>
+                        <dl class="salon-access__table">
+                            <div class="salon-access__row">
+                                <dt class="salon-access__label">住所</dt>
+                                <dd class="salon-access__value">大分県〇〇市〇〇１２３</dd>
+                            </div>
+                            <div class="salon-access__row">
+                                <dt class="salon-access__label">営業時間</dt>
+                                <dd class="salon-access__value">10:00〜19:00</dd>
+                            </div>
+                            <div class="salon-access__row">
+                                <dt class="salon-access__label">定休日</dt>
+                                <dd class="salon-access__value">火曜日</dd>
+                            </div>
+                            <div class="salon-access__row">
+                                <dt class="salon-access__label">TEL</dt>
+                                <dd class="salon-access__value">00-1234-5678</dd>
+                            </div>
+                        </dl>
                     </div>
                 </div>
             </div>
@@ -163,7 +241,7 @@
             <div class="container">
                 <div class="salon-contact__inner">
                     <p class="section-subtitle">Contact</p>
-                    <h2 class="section-title section-title__center">ご予約・お問い合せ</h2>
+                    <h2 class="section-title section-title--center">ご予約・お問い合せ</h2>
                     <p class="salon-contact__text">ご予約・お問い合わせは、お電話またはWebからお気軽にご連絡ください。</p>
                     <a href="#" class="btn btn--primary">予約する</a>
                 </div>
@@ -175,9 +253,13 @@
         <div class="container">
             <div class="salon-footer__inner">
                 <p class="salon-footer__logo">Hair Salon Lumiere</p>
-                <p class="salon-footer__copy">© 2026 Hari Salon Lumiere</p>
+                <p class="salon-footer__copy">© 2026 Hair Salon Lumiere</p>
+                <p class="photo-credit">Photos by Wilcle Nunes on Pexels</p>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>    
 </html>
